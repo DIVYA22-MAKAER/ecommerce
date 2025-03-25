@@ -671,3 +671,4 @@ function addToCart()
 .then(console.log);
 
 }
+

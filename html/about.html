@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MySink - About Us & Customer Reviews</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body data-aos-easing="ease" data-aos-duration="400" data-aos-delay="0">
+    <!-- Navigation from existing site -->
+    <div class="main__nav">
+        <i class="fa fa-align-center icon__toggler" style="font-size: 2rem" onclick="Change()"></i>
+        <ul>
+            <li class="product" style="border: 0px solid red">
+                <a href="">Products<i class="fa fa-solid fa-angle-down" style="color: black"></i></a>
+            </li>
+            <div class="product__submenu" onmouseover="display()" onmouseleave="hide()">
+                <a href="#" onclick="getValue('cloth')">clothing line</a>
+                <a href="#" onclick="getValue('decoration')">Decoration</a>
+                <a href="#" onclick="getValue('bags')">Bags</a>
+                <a href="#" onclick="getValue('Jewellery')">Jewellory</a>
+                <a href="#" onclick="getValue('skincare')">skincare</a>
+                <a href="#" onclick="getValue('shoes')">Footwear</a>
+                <a href="#" onclick="getValue('Perfume')">Perfume</a>
+                <a href="#" onclick="getValue('lighting')">lighting</a>
+            </div>
+            <li><a href="reviews.html">Customer Reviews</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+
+        <a href="index.html" class="regular__logo" style="display: block">
+            <div class="regular__logo">
+                <img src="../images/header_logo.svg" />
+            </div>
+        </a>
+        <div class="icons">
+            <i class="fa fa-search icon__item" onclick="showSearchBar()"></i>
+            <i class="fa fa-user icon__item"></i>
+            <i class="fa fa-shopping-cart icon__item" id="cart-button" onclick="toggleCart()"></i>
+        </div>
+    </div>
+
+    <!-- About Us Section -->
+    <section class="about-us-section" data-aos="fade-up">
+        <div class="container">
+            <h1>About MySink</h1>
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="C:\Users\DIVYA\Documents\web_project\ecommerce\Ecommerce-website\images\homepage\logo.png" alt="MySink Store">
+                </div>
+                <div class="about-text">
+                    <h2>Our Story</h2>
+                    <p>Founded in 2020, MySink is more than just an eCommerce store - we're a lifestyle brand dedicated to bringing unique, high-quality products to fashion enthusiasts worldwide.</p>
+                    
+                    <h2>Our Mission</h2>
+                    <p>We believe in curating products that not only look great but tell a story. From carefully selected clothing lines to exquisite accessories, every item in our collection is chosen with passion and purpose.</p>
+                    
+                    <h2>Our Commitment</h2>
+                    <ul>
+                        <li>Quality Products</li>
+                        <li>Customer Satisfaction</li>
+                        <li>Sustainable Fashion</li>
+                        <li>Innovative Design</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <!-- Footer from existing site -->
+   <!-- Footer section -->
+    <footer class="section-p1">
+      <div class="col">
+        <img class="logo" src="../images/logo.svg" alt="" />
+        <h4>Contact</h4>
+        <p><strong>Address:</strong>1234 Elm Street, Springfield, IL 62704</p>
+        <p><strong>Mobile:</strong>555-123-4567</p>
+        <p><strong>Hours:</strong>10:00 - 18:00, Man - Sat</p>
+        <div class="follow">
+          <h4>Follow Us</h4>
+          <div class="icon">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-pinterest"></i>
+            <i class="fa fa-youtube"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <h4>About Us</h4>
+        <a href="#abc">About us</a>
+        <a href="#abc">Delievery Information</a>
+        <a href="#abc">Privacy Policy</a>
+        <a href="#abc">Terms & Conditions</a>
+        <a href="#abc">Contact us</a>
+      </div>
+
+      <div class="col">
+        <h4>My Account</h4>
+        <a href="#abc">Sign In</a>
+        <a href="#abc">View Cart</a>
+        <a href="#abc">My Wishlist</a>
+        <a href="#abc">Track My Order</a>
+        <a href="#abc">Help</a>
+      </div>
+      <div class="col install">
+       
+      <div class="copyright">
+        <p>Developed by <a style="text-decoration: underline;" href=" https://www.linkedin.com/in/divyajawalkar22">Divya jawalkar.</a></p>
+      </div>
+    </footer>
+
+    <script src="../js/script.js"></script>
+    <!-- <script src="script.js"></script> -->
+  </body>
+</html>
+
+
+    <script src="../js/script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>AOS.init();</script>
+</body>
+</html>

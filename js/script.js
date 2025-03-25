@@ -484,3 +484,57 @@ function Change(){
     document.querySelector('.mobile__nav').classList.remove('show__nav');
     document.querySelector('.body__move').classList.remove('abc');
   }
+// Note: This JavaScript can be added to your existing script.js file
+
+// Optional: Dynamic Review Loading Function
+function loadDynamicReviews() {
+    const reviewsData = [
+        {
+            name: "Sarah M.",
+            stars: 5,
+            review: "Amazing quality and fast shipping! Will definitely buy again."
+        },
+        {
+            name: "Michael T.",
+            stars: 4,
+            review: "Great variety of products. Love the unique designs!"
+        },
+        {
+            name: "Emily R.",
+            stars: 5,
+            review: "Exceptional customer service. My go-to online store."
+        },
+        {
+            name: "David K.",
+            stars: 4,
+            review: "Trendy items at reasonable prices. Highly recommend!"
+        }
+    ];
+
+    const reviewsGrid = document.querySelector('.reviews-grid');
+    
+    if (reviewsGrid) {
+        reviewsGrid.innerHTML = reviewsData.map(review => `
+            <div class="review-card">
+                <div class="review-stars">${'★'.repeat(review.stars)}${'☆'.repeat(5 - review.stars)}</div>
+                <p>"${review.review}"</p>
+                <h4>- ${review.name}</h4>
+            </div>
+        `).join('');
+    }
+}
+
+// Optional: Add review submission functionality
+function submitReview(event) {
+    event.preventDefault();
+    const name = document.getElementById('reviewName').value;
+    const reviewText = document.getElementById('reviewText').value;
+    const rating = document.querySelector('input[name="rating"]:checked').value;
+
+    // Here you would typically send this to a backend
+    console.log('Review Submitted:', { name, reviewText, rating });
+    alert('Thank you for your review!');
+}
+
+// Call dynamic reviews loading when page loads
+document.addEventListener('DOMContentLoaded', loadDynamicReviews);
